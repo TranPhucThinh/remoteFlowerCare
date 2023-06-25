@@ -21,7 +21,6 @@ const ModePanel = () => {
           <Col span={1}></Col>
           <Col span={11}>
             <Switch
-              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('AUTO', isChecked)
@@ -40,7 +39,6 @@ const ModePanel = () => {
           <Col span={1}></Col>
           <Col span={11}>
             <Switch
-              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('DEN', isChecked)
@@ -52,7 +50,6 @@ const ModePanel = () => {
           </Col>
           <Col span={11}>
             <Switch
-              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('PHUN_NUOC', isChecked)
@@ -70,7 +67,6 @@ const ModePanel = () => {
           <Col span={1}></Col>
           <Col span={11}>
             <Switch
-              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('QUAT', isChecked)
@@ -82,7 +78,6 @@ const ModePanel = () => {
           </Col>
           <Col span={11}>
             <Switch
-              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('PHUN_SUONG', isChecked)
