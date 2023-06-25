@@ -8,6 +8,8 @@
   width: 100%;
   background-color: #434343;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 .title-wrapper {
   display: flex;
@@ -87,7 +89,7 @@
   height: 40px;
   background-color: #434343;
   color: #ffffff;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -111,4 +113,53 @@
   position: absolute;
   right: 50px;
   top: 130px;
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    padding-top: 0;
+  }
+  .faculty-logo,
+  .school-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .title-text {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .clock-wrapper {
+    position: static;
+    margin: 20px auto;
+  }
+  .content-wrapper {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .ant-tabs-content-holder .ant-row {
+    margin-bottom: 52px;
+  }
+  .ant-row .col-item {
+    margin-top: 0 !important;
+  }
+  .switch-wrapper {
+    margin-top: 0;
+  }
+  .switch-content {
+    margin-top: 24px;
+  }
+  .switch-content .ant-col-11 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .switch-content .mode-title {
+    margin-left: 0;
+  }
+  .footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 14px;
+  }
 }
