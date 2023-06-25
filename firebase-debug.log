@@ -1,0 +1,116 @@
+[debug] [2023-05-30T14:41:02.716Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T14:41:02.719Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-30T14:41:02.720Z] CLI Version:   12.2.1
+[debug] [2023-05-30T14:41:02.720Z] Platform:      win32
+[debug] [2023-05-30T14:41:02.720Z] Node Version:  v16.16.0
+[debug] [2023-05-30T14:41:02.721Z] Time:          Tue May 30 2023 21:41:02 GMT+0700 (Indochina Time)
+[debug] [2023-05-30T14:41:02.722Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T14:41:02.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T14:41:02.829Z] > authorizing via signed-in user (thinhdng2001@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\DATN\CD\CD\DOC\SmartSwiftletHome Webapp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-30T14:41:21.657Z] Using project from CLI flag: doan-3f0dd
+[debug] [2023-05-30T14:41:21.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd [none]
+[debug] [2023-05-30T14:41:22.133Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd 403
+[debug] [2023-05-30T14:41:22.134Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-30T14:41:22.135Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-30T14:41:22.390Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Admin\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project doan-3f0dd. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-30T14:41:42.912Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T14:41:42.915Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-30T14:41:42.916Z] CLI Version:   12.2.1
+[debug] [2023-05-30T14:41:42.916Z] Platform:      win32
+[debug] [2023-05-30T14:41:42.916Z] Node Version:  v16.16.0
+[debug] [2023-05-30T14:41:42.917Z] Time:          Tue May 30 2023 21:41:42 GMT+0700 (Indochina Time)
+[debug] [2023-05-30T14:41:42.918Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T14:41:43.026Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T14:41:43.027Z] > authorizing via signed-in user (thinhdng2001@gmail.com)
+[debug] [2023-05-30T14:41:43.027Z] [iam] checking project doan-3f0dd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-30T14:41:43.030Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/doan-3f0dd:testIamPermissions [none]
+[debug] [2023-05-30T14:41:43.031Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/doan-3f0dd:testIamPermissions x-goog-quota-user=projects/doan-3f0dd
+[debug] [2023-05-30T14:41:43.031Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/doan-3f0dd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T14:41:44.262Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/doan-3f0dd:testIamPermissions 200
+[debug] [2023-05-30T14:41:44.262Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/doan-3f0dd:testIamPermissions {}
+[debug] [2023-05-30T14:41:44.262Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project doan-3f0dd:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-05-30T14:41:44.263Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd [none]
+[debug] [2023-05-30T14:41:44.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd 403
+[debug] [2023-05-30T14:41:44.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-30T14:41:44.915Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-30T14:41:45.148Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Admin\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project doan-3f0dd. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-30T14:41:52.322Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T14:41:52.325Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-30T14:41:52.326Z] CLI Version:   12.2.1
+[debug] [2023-05-30T14:41:52.327Z] Platform:      win32
+[debug] [2023-05-30T14:41:52.327Z] Node Version:  v16.16.0
+[debug] [2023-05-30T14:41:52.328Z] Time:          Tue May 30 2023 21:41:52 GMT+0700 (Indochina Time)
+[debug] [2023-05-30T14:41:52.328Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T14:41:52.449Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T14:41:52.449Z] > authorizing via signed-in user (thinhdng2001@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\DATN\CD\CD\DOC\SmartSwiftletHome Webapp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-30T14:42:04.036Z] Using project from CLI flag: doan-3f0dd
+[debug] [2023-05-30T14:42:04.040Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd [none]
+[debug] [2023-05-30T14:42:04.723Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd 403
+[debug] [2023-05-30T14:42:04.723Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/doan-3f0dd {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-30T14:42:04.724Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-30T14:42:04.964Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Admin\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project doan-3f0dd. Please make sure the project exists and your account has permission to access it.
