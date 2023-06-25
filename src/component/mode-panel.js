@@ -15,11 +15,13 @@ const ModePanel = () => {
   }
   return (
     <div className="switch-wrapper">
-      <div className="switch-content">
+      <div className="switch-title">
+        <p className="control-tittle">Điều khiển</p>
         <Row>
           <Col span={1}></Col>
           <Col span={11}>
             <Switch
+              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('AUTO', isChecked)
@@ -38,6 +40,7 @@ const ModePanel = () => {
           <Col span={1}></Col>
           <Col span={11}>
             <Switch
+              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('DEN', isChecked)
@@ -49,6 +52,7 @@ const ModePanel = () => {
           </Col>
           <Col span={11}>
             <Switch
+              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('PHUN_NUOC', isChecked)
@@ -66,6 +70,7 @@ const ModePanel = () => {
           <Col span={1}></Col>
           <Col span={11}>
             <Switch
+              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('QUAT', isChecked)
@@ -77,6 +82,7 @@ const ModePanel = () => {
           </Col>
           <Col span={11}>
             <Switch
+              style={{ backgroundColor: '#ccc' }}
               defaultChecked={false}
               onChange={(isChecked) => {
                 onChange('PHUN_SUONG', isChecked)
