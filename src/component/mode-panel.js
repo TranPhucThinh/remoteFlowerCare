@@ -15,7 +15,8 @@ const ModePanel = () => {
   }
   return (
     <div className="switch-wrapper">
-      <div className="switch-content">
+      <div className="switch-title">
+        <p className="control-tittle">Điều khiển</p>
         <Row>
           <Col span={1}></Col>
           <Col span={11}>
