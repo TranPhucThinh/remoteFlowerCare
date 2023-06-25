@@ -1,14 +1,13 @@
-import { Col, Row, Tabs, Typography } from 'antd'
+import { Col, Row, Tabs } from 'antd'
 import React from 'react'
 import './App.css'
 import Clock from './component/clock'
 import Footer from './component/footer'
 import InfoPanel from './component/info-panel'
 import ModePanel from './component/mode-panel'
+import Weather from './component/weather'
 import logo from './images/image002.png'
 import logo1 from './images/logokhoa.png'
-
-const { Title } = Typography
 
 const App = () => {
   return (
@@ -34,7 +33,10 @@ const App = () => {
           </Col>
         </Row>
       </div>
-      <Clock />
+      <div>
+        <Weather />
+        <Clock />
+      </div>
       <div className="content-wrapper">
         <Tabs defaultActiveKey="1">
           <Tabs.TabPane tab="Thông tin chung" key="1">
