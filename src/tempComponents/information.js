@@ -1,12 +1,11 @@
 import { Col, Row } from 'antd'
 import React from 'react'
-import '../App.css'
 import logo from '../images/image002.png'
 import logo1 from '../images/logokhoa.png'
 import ava1 from '../images/cut1.png'
 import ava2 from '../images/duc.jpg'
 import ava3 from '../images/thsHVV.jpg'
-import imgPrj from '../images/temp.png'
+import imgPrj from '../images/temp.jpg'
 
 const Information = () => {
   return (
@@ -20,9 +19,8 @@ const Information = () => {
           </Col>
           <Col span={12}>
             <div className="header-title">
-              <p className="title-text">
-                HỆ THỐNG THEO DÕI VÀ CHĂM SÓC HOA CÚC TỪ XA
-              </p>
+              <p className="title-text">ĐỒ ÁN TỐT NGHIỆP</p>
+              <p className="title-text">CHUYÊN NGÀNH KỸ THUẬT MÁY TÍNH</p>
             </div>
           </Col>
           <Col span={6} className="title-wrapper">
@@ -44,7 +42,7 @@ const Information = () => {
               </div>
               <div className="mentor-desc">
                 <div>
-                  <span className="desc-title">Ths.</span>
+                  <span className="desc-title">ThS.</span>
                   <span> Hồ Viết Việt</span>
                 </div>
               </div>
@@ -53,25 +51,6 @@ const Information = () => {
           <div className="members">
             <Col>
               <p className="title-member">THÀNH VIÊN</p>
-            </Col>
-            <Col className="member">
-              <div className="member-img">
-                <img src={ava1} alt="Tran Phuc Thinh" />
-              </div>
-              <div className="member-desc">
-                <div>
-                  <span className="desc-title">Tên:</span>
-                  <span> Trần Phúc Thịnh</span>
-                </div>
-                <div>
-                  <span className="desc-title">Mã SV:</span>
-                  <span> 106190037</span>
-                </div>
-                <div>
-                  <span className="desc-title">Chuyên ngành:</span>
-                  <span> Kỹ thuật máy tính</span>
-                </div>
-              </div>
             </Col>
             <Col className="member">
               <div className="member-img">
@@ -85,6 +64,25 @@ const Information = () => {
                 <div>
                   <span className="desc-title">Mã SV:</span>
                   <span> 106190007</span>
+                </div>
+                <div>
+                  <span className="desc-title">Chuyên ngành:</span>
+                  <span> Kỹ thuật máy tính</span>
+                </div>
+              </div>
+            </Col>
+            <Col className="member">
+              <div className="member-img">
+                <img src={ava1} alt="Tran Phuc Thinh" />
+              </div>
+              <div className="member-desc">
+                <div>
+                  <span className="desc-title">Tên:</span>
+                  <span> Trần Phúc Thịnh</span>
+                </div>
+                <div>
+                  <span className="desc-title">Mã SV:</span>
+                  <span> 106190037</span>
                 </div>
                 <div>
                   <span className="desc-title">Chuyên ngành:</span>
@@ -106,7 +104,10 @@ const Information = () => {
           <div className="project-desc">
             <div style={{ marginBottom: 8 }}>
               <span className="desc-title">Tên đề tài:</span>
-              <span> Hệ thống theo dõi và chăm sóc hoa cúc từ xa</span>
+              <span style={{ textTransform: 'uppercase' }}>
+                {' '}
+                Hệ thống theo dõi và chăm sóc hoa cúc trong nhà kính từ xa
+              </span>
             </div>
             <div style={{ marginBottom: 8 }}>
               <span className="desc-title">Chức năng:</span>

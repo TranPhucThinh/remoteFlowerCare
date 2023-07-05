@@ -1,0 +1,25 @@
+.control__wrapper {
+  .control__header {
+    border-bottom: 1px solid #c9c7c773;
+
+    h2 {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 12px;
+    }
+  }
+
+  .control__content {
+    padding-top: 12px;
+    .ant-row {
+      .ant-switch-checked {
+        background-color: 000;
+      }
+    }
+  }
+}
