@@ -3,7 +3,10 @@
   background-color: rgba(24, 144, 255, 0.2);
   color: white;
   padding: 24px;
+  justify-content: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
 
   .wrapper {
     .wrapper__align--center {
@@ -18,7 +21,7 @@
         border: none;
 
         .ant-card-body {
-          padding: 12px;
+          padding: 20px;
         }
       }
     }
