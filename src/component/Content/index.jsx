@@ -12,13 +12,14 @@ const Content = () => {
       style={{
         width: '100%',
         borderRadius: 12,
+        height: 600,
         backgroundColor: '#40a9ff',
         boxShadow: 'rgb(64, 169, 255) 3px 4px 16px 0px',
       }}
     >
       <HeaderContent />
       <Stats />
-      <Introduce />
+      {/* <Introduce /> */}
     </Card>
   )
 }
