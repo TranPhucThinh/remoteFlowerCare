@@ -2,13 +2,6 @@ import React from 'react'
 import MasterLayout from './component/MasterLayout'
 
 const App = () => {
-  const getPositionTab = () => {
-    if (window.innerWidth >= 480) {
-      return 'left'
-    }
-    return 'top'
-  }
-
   return (
     // <div className="container">
     //   <Weather />
