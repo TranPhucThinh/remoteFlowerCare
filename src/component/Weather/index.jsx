@@ -97,7 +97,7 @@ const Weather = () => {
             </div>
             <div className="item__desc">
               <p>Tốc độ gió</p>
-              <p>{weatherData?.wind?.speed * 3.6} km.h</p>
+              <p>{(weatherData?.wind?.speed * 3.6).toFixed(2)} km/h</p>
             </div>
           </div>
           <div className="weather__details--item">
