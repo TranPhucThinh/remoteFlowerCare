@@ -27,3 +27,39 @@
     }
   }
 }
+
+@media screen and (max-width: 380px) {
+  .container {
+    align-items: start;
+    height: 100%;
+
+    .wrapper {
+      .ant-col-4 {
+        max-width: 100%;
+      }
+
+      .ant-col-19 {
+        .ant-card-bordered {
+          height: 100% !important;
+          .header__content {
+            display: none;
+          }
+
+          .stats__wrapper {
+            .stats__header {
+              text-align: center;
+            }
+
+            .stats__sub--header {
+              text-align: center;
+            }
+
+            .stat-desc {
+              margin-top: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
