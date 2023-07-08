@@ -1,10 +1,9 @@
-import React from 'react'
 import { Card } from 'antd'
+import React from 'react'
 
-import './content.scss'
 import HeaderContent from './HeaderContent'
 import Stats from './Stats'
-import Introduce from './Introduce'
+import './content.scss'
 
 const Content = () => {
   return (
@@ -19,7 +18,6 @@ const Content = () => {
     >
       <HeaderContent />
       <Stats />
-      {/* <Introduce /> */}
     </Card>
   )
 }
