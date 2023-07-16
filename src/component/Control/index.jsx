@@ -1,25 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card, Col, Row, Switch } from 'antd'
-import { ref, update } from 'firebase/database'
+import { child, get, ref, update } from 'firebase/database'
 import { database } from '../../firebaseConfig'
 
 import './control.scss'
 
 const Control = () => {
+  const [autoMode, setAutoMode] = useState(false)
   function writeNewPost(newVal, selectedMode) {
     const postData = newVal
     const updates = {}
     updates[`${selectedMode}`] = postData
     return update(ref(database), updates)
   }
-  const onChange = (selectedMode, checked) => {
-    writeNewPost(`${checked}`, `${selectedMode}`)
+
+  const onChangeDevice = (mode, isChecked) => {
+    if (mode === 'AUTO') {
+      setAutoMode(isChecked)
+    }
+    writeNewPost(isChecked, mode)
   }
 
   return (
     <Card
       style={{
-        width: 240,
+        width: 260,
         borderRadius: 12,
         backgroundColor: '#40a9ff',
         marginTop: 12,
@@ -37,7 +42,7 @@ const Control = () => {
               <Switch
                 defaultChecked={false}
                 onChange={(isChecked) => {
-                  onChange('AUTO', isChecked)
+                  onChangeDevice('AUTO', isChecked)
                 }}
               />
               <span
@@ -58,8 +63,9 @@ const Control = () => {
             <Col span={24} style={{ display: 'flex' }}>
               <Switch
                 defaultChecked={false}
+                disabled={autoMode}
                 onChange={(isChecked) => {
-                  onChange('DEN', isChecked)
+                  onChangeDevice('DEN', isChecked)
                 }}
               />
               <span
@@ -80,8 +86,9 @@ const Control = () => {
             <Col span={24} style={{ display: 'flex' }}>
               <Switch
                 defaultChecked={false}
+                disabled={autoMode}
                 onChange={(isChecked) => {
-                  onChange('PHUN_NUOC', isChecked)
+                  onChangeDevice('PHUN_NUOC', isChecked)
                 }}
               />
               <span
@@ -102,8 +109,9 @@ const Control = () => {
             <Col span={24} style={{ display: 'flex' }}>
               <Switch
                 defaultChecked={false}
+                disabled={autoMode}
                 onChange={(isChecked) => {
-                  onChange('QUAT', isChecked)
+                  onChangeDevice('QUAT', isChecked)
                 }}
               />
               <span
@@ -124,8 +132,9 @@ const Control = () => {
             <Col span={24} style={{ display: 'flex' }}>
               <Switch
                 defaultChecked={false}
+                disabled={autoMode}
                 onChange={(isChecked) => {
-                  onChange('PHUN_SUONG', isChecked)
+                  onChangeDevice('PHUN_SUONG', isChecked)
                 }}
               />
               <span
