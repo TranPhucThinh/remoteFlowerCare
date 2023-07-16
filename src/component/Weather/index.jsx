@@ -61,7 +61,7 @@ const Weather = () => {
   return (
     <Card
       style={{
-        width: 240,
+        width: 260,
         borderRadius: 12,
         backgroundColor: '#40a9ff',
         boxShadow: 'rgb(64, 169, 255) 3px 4px 16px 0px',
